@@ -390,3 +390,44 @@ m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 * What is *Clickjacking* and *Cursorjacking* ? How to prevent it ?
 
 #### [[⬆]](#toc) <a name='android'>Android:</a>
+
+
+#### My additions
+I have a whole list of canned questions that I often go through when someone tells me they’re full stack to gauge how well they know Linux (I only work in Linux, and as a result I only ask related interview questions), database (design mostly, like schema normalization, some canned query and keyword questions), a back-end language (I’m happy to ask specific questions about Java, Ruby, or Python, or use pseudocode if that doesn’t work), and some front-end stuff (but mostly related to how the web works, as opposed to any particular JavaScript questions). In each case, before I ask any of these categorical questions, I ask the person to rank themselves on a scale of 1 to 10. I do this so that I can compare my own evaluation to theirs. It’s OK much of the time for them to have a low evaluation so long as they know it; there’s nothing more dangerous / toxic to a team than someone ignorant who thinks they’re brilliant.
+
+Examples are:
+
+Linux:
+What are the run-levels in Linux? How do they relate to services?
+How do I figure out resource bottlenecks on a system?
+Tell me about some standard system hardening methods; what are they and why are they used?
+Database:
+Tell me about normalization / denormalization; what are these and when are they used?
+Tell me about indices; when should you and when should you not use indices?
+I’d also ask a couple of canned query / keyword questions, giving some setup and asking the person to do some joins / nested selects / having statements on the board (my boss loves this one).
+Back-end
+What’s your favorite data-structure (my boss loves this one too) and why it’s your favorite?
+Most people choose (hash)map / dictionary / associative array, I ask them to describe why these are good (i.e., BigO notation answers) and in what contexts. I might even ask them to write a basic hashing algorithm.
+I’ll ask one of a few canned questions to gauge understanding of algorithms, but I probably won’t ask them to actually write them on the board as:
+This wastes a ton of interview time, depending.
+This is a task most often asked of new graduates as they don’t have experience on their resume that I can leverage to ask better questions. More senior developers will have forgotten a lot of these silly canned questions and I can ask them meatier questions about complete system architecture and process from their resume.
+I’ll also ask language specific questions if they know one of Java, Python, or Ruby, as I have expertise in these areas and can ask interesting language-specific implementation questions, such as:
+Explain garbage collection to me in detail in Java.
+Explain the benefits of lambda notation in detail in Python.
+What are the hazards of using Rails ORM, how can you test for them?
+Front-end / web:
+Explain RESTful architecture to me.
+What is CRUD and how is it implemented in X (where X is one of J2EE, Python Django, or Ruby on Rails)?
+How does a GET differ from a POST request, why use one over the other?
+Walk me through the entire stack from the viewpoint of the consumer.
+Very few people are able to do this effectively, which boggles my mind. You are not a full-stack developer if you can’t explain this in plain language.
+If they have experience: describe the high-level architecture of a system you’ve implemented.
+This helps me gauge their ability to quickly and clearly articulate ideas.
+I’ll also likely ask some more generic questions, like:
+What’s your favorite language and why?
+What side projects are you currently working on? I ask this one for two reasons:
+First, I can gauge passion and interest in the field by how they choose to spend their free time
+Second, this person may be trying to split their time between their own startup and a full-time position, which WILL be detrimental for one or the other.
+Tell me about yourself outside of work.
+I like well-rounded candidates. If ALL you do is code, all the time, you may not be a good culture fit, as I’ll eventually put you in front of clients / non-engineers.
+Hope this was helpful.
